@@ -1,2 +1,3 @@
-# linux_basic
-basic shell commands
+## Linux Basic ##
+- Introduction to Shell Commands
+- Basic Shell Commands
