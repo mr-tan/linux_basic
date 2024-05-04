@@ -1,6 +1,4 @@
-# Introduction to Shell #
-
-## The Home Directory ##
+## Introduction to Shell ##
 
 ### What: ###
 - Starting location inside the shell
