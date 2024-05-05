@@ -41,25 +41,25 @@
 # Query device information
 [~]$ udevadm info --query=path --name=/dev/sda5
 
-# info attached/remove device
+# Info attached/remove device
 [~]$ udevadm monitor
 
-# list all pci devices 
+# List all pci devices 
 [~]$ lspci
 
-# list block devices: eg. sda1
+# List block devices: eg. sda1
 [~]$ lsblk
 
-# cpu info
+# Cpu info
 [~]$ lscpu
 
-# list memory
+# List memory
 [~]$ lsmem --summary
 
-# free memory
+# Free memory
 [~]$ free -m
 
-# detail hardware config
+# Detail hardware config
 [~]$ lshw 
 
 ```
