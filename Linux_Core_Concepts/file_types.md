@@ -31,8 +31,7 @@
 # d -directory, - regular file, c - character
 # l - link, s - socket file, p - pipe, b - block device
 [~]$ ls -ld /home/bob
-
-drwxrwxr-x 2 mt mt 4096 May  6 01:59
+drwxrwxr-x 
 
 
 ```
