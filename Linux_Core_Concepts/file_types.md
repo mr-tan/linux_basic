@@ -1,7 +1,7 @@
 ## Linux Core Concepts ##
 
 ### WHAT: ###
-- File Types in Linux;
+- File Types in Linux:
     1. Regular file (eg. images, scripts, configuration/ data files)
     2. Directory (eg. /home/bob)
     3. Special Files (eg. character files, block files, links, socket, named pipes)
