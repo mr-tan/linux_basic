@@ -1,4 +1,4 @@
-## Linux Boot ##
+## Linux Core Concepts ##
 
 ### WHAT: ###
 Linux Boot Sequence Overview:
