@@ -12,8 +12,6 @@
 - See below
 ---
 
-#### Basic Linux Commands ####
-
 ```bash
 [~]$ pwd
 
