@@ -2,16 +2,26 @@
 
 ### WHAT: ###
 Linux Networking Basics
-- DNS
-- Domain Names:
+
+- Domain Names System(DNS):
     - .com - commercial or general purpose
     - .net - network or general purpose
     - .edu - education
     - .org - non-profit
+
 - Domain:
-    - root
-    - sub-domain
-    - domain
+    - root eg. "."
+    - top level domain name eg. ".com"
+    - subdomain eg. "www"
+
+- Domain Names:
+    - apps.google.com(Public) -> Org(DNS) -> Root(DNS) -> .com(DNS) -> Google(DNS)
+    - ip will be cache
+
+- Record Types:
+    - ip to hostname = A Record
+    - ipv6 to hostname = quad A Record 
+    - name to name = Cname Record
 
 - Networking Basics
 - Troubleshooting
@@ -19,10 +29,6 @@ Linux Networking Basics
 
 ### WHY: ###
 - Understanding network architecture
----
-
-### HOW: ####
-- See below
 ---
 
 ```bash
