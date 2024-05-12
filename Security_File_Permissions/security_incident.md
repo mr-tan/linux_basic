@@ -82,11 +82,6 @@ root ~#
 # name:password:gid:members
 [~]$ grep -i ^bob /etc/group
 
-
-
-
-
-
 ```
 
 
