@@ -13,7 +13,7 @@ Managing Users
 [~]$ useradd bob
 
 # Show detail about bob
-[~]$ grep -i bob /etc/pwd
+[~]$ grep -i bob /etc/passwd
 
 # Show password for bob
 [~]$ grep -i bob /etc/shadow
@@ -25,7 +25,7 @@ Managing Users
 # -c = custom comments
 # -d = custom home directory
 # -e = expiry date
-# -g = specifi GID
+# -g = specific GID
 # -G = create user with multiple secondary groups
 # -s = specify login shells
 # -u specific UID
