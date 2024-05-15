@@ -18,8 +18,14 @@ CronJobs:
 # m h   dom mon dow     command
   0 21  *   *   *       uptime >> /tmp/system-report.txt
 
+# List crontab option
+[~]$ crontab -h
+
 # List all schedule jobs in cron
 [~]$ crontab -l
+
+# List cron jobs of the other user
+[~]$ crontabl -u <bob> -l
 
 # View log files for cron jobs
 [~]$ tail /var/log/syslog
