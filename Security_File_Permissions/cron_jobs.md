@@ -25,7 +25,7 @@ CronJobs:
 [~]$ crontab -l
 
 # List cron jobs of the other user
-[~]$ crontabl -u <bob> -l
+[~]$ crontab -u <bob> -l
 
 # View log files for cron jobs
 [~]$ tail /var/log/syslog
