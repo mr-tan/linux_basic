@@ -7,12 +7,22 @@ Introduction to SYSTEMD:
 Create your own SYSTEMD service
 - 
 
-SYSTEMD Tools
-- 
+SYSTEMD Tools:
+
+- SYSTEMCTL:
+    - manage system state
+    - start/ stop/ restart
+    - enable/ disable
+    - list and manage units
+    - list and update targets
+
+- JOURNALCTL:
+    - query SYSTEMD journal
+
 ---
 
 ### WHY: ###
-- Navigate inside the shell
+- Running service(s) in the background process
 ---
 
 ### HOW: ####
@@ -39,24 +49,61 @@ RestartSec=10
 
 [Install]
 WantedBy graphical.target
+```
 
-# Start systemd
-[~]$ sudo systemctl start project-mercury.service
+```bash
 
-# Check project status
-[~]$ sudo systemctl status project-mercury.service
+# Service Management with SystemMD
+#
+# Start
+[~]$ sudo systemctl start docker.service
 
-# Stop systemd
-[~]$ sudo systemctl stop project-mercury.service
+# Stop 
+[~]$ sudo systemctl stop docker.service
+docker.service# Restart 
+[~]$ sudo systemctl restart docker.service
 
-# Enable systemd
-[~]$ sudo systemctl enable project-mercury.service
+# Reload
+[~]$ sudo systemctl reload docker.service
+
+# Enable service and persistent across reboot
+[~]$ sudo systemctl enable docker.service
+
+# Disable service at boot
+[~]$ sudo systemctl disable docker.service
+
+# Check service status
+# Read state
+# Active = Service Running
+# Inactive = Service Stopped
+# Failed = Crashed/Error/Timeout e.t.c
+#
+[~]$ sudo systemctl status docker.service
 
 # Systemd will notice changes
 [~]$ sudo systemctl daemon-reload
 
+# Edit Systemd
+[~]$ sudo systemctl edit docker.service --full
+
+# Get current run-level
+[~]$ sudo systemctl get-default
+
+# Change target
+[~]$ sudo systemctl set-default multi-user.target
+
+# List all units
+[~]$ sudo systemctl list-units --all
+
 # Show log error list
-[~]$ sudo journalctl -u project-mercury.service
+[~]$ sudo journalctl -u docker.service
+
+#
+[~]$ sudo journalctl -b
+
+#
+[~]$ sudo journalctl -u UNIT
+
 
 
 ```
