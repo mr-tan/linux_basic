@@ -49,6 +49,9 @@ WantedBy graphical.target
 # Stop systemd
 [~]$ sudo systemctl stop project-mercury.service
 
+# Enable systemd
+[~]$ sudo systemctl enable project-mercury.service
+
 # Systemd will notice changes
 [~]$ sudo systemctl daemon-reload
 
