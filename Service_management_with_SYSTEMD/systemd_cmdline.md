@@ -52,8 +52,6 @@ WantedBy graphical.target
 # Systemd will notice changes
 [~]$ sudo systemctl daemon-reload
 
-
-
 ```
 
 
