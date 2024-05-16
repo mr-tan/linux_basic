@@ -55,6 +55,10 @@ WantedBy graphical.target
 # Systemd will notice changes
 [~]$ sudo systemctl daemon-reload
 
+# Show log error list
+[~]$ sudo journalctl -u project-mercury.service
+
+
 ```
 
 
