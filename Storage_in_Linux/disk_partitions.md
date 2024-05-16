@@ -58,17 +58,18 @@ Partition Scheme: GUID partition table (GPT)
 # gdisk improved version of fdisk
 # in Gparted
 # 
-[~] gdisk /dev/sdb
+[~] sudo gdisk /dev/sdb
 
 # Inside GDisk
 # Command Options
 # ? = List all the options
 # n = create new partition
 # 1 = partition number
-# First sector: 2048 = 20 GiB
-# Last sector: 41943006
+# First sector: +20G
+# Last sector: accept default
 # *Hex code or GUID Enter = 8300 Linux filesystem
 # W = Write to the partition table
+# Y = to confirm
 
 # Check the status partition
 [~]$ sudo fdisk -l /dev/sdb
