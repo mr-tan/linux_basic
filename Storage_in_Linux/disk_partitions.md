@@ -24,8 +24,6 @@ Partition Scheme: MBR
 Partition Scheme: GUID partition table (GPT)
 - No max size per partition
 - Unlimited partitions
-- 
-
 ---
 
 ### WHY: ###
