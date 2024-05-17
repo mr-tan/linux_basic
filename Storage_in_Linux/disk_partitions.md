@@ -1,15 +1,6 @@
-## Disk Partitions ##
+## Storage in Linux ##
 
 ### WHAT: ###
-Storage Basic:
-- Disk partitions
-- Linux Filesystems (EXT2-EXT4)
-- NFS
-- Exteernal Storage Devices (DAS/NAS/SAN)
-- Logical Volume Manager
-
-Introduction to Storage Basics:
-- block storage
 
 Partition Types:
 - primary partition
@@ -24,10 +15,6 @@ Partition Scheme: MBR
 Partition Scheme: GUID partition table (GPT)
 - No max size per partition
 - Unlimited partitions
----
-
-### WHY: ###
-- Understand where data is stored
 ---
 
 ```bash
@@ -73,6 +60,7 @@ Partition Scheme: GUID partition table (GPT)
 
 # Check the status partition
 [~]$ sudo fdisk -l /dev/sdb
+
 ```
 
 
