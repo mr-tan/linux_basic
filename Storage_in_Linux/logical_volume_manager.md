@@ -66,9 +66,8 @@ Logical Volume Manager (LVM)
 #
 [~]$ df -hP /mnt/vol1
 
-
-
-
+# Inspect the size of disks
+[~]$ sudo lsblk
 
 
 ```
